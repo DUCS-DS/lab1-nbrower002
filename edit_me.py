@@ -1,12 +1,13 @@
 
-def find_max(lst):
+def find_max(st):
     """return the maximum element"""
 
-    current_max = lst[0]
+    current_max = st[0]
 
-    #
-    #  YOUR CODE GOES HERE
-    #
+    for i in range (1, len(st)):
+        if st[i] > current_max:
+            current_max = st[i]
+    
 
     return current_max
 
